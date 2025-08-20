@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Blog - Ravine Dairies Cooperative</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="index.html">
+                <i class="bi bi-droplet-fill me-2"></i>Ravine Dairies
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="farmers.html">Our Farmers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sustainability.html">Sustainability</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="news.html">News/Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-cream">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold text-success mb-3">News & Blog</h1>
+                    <p class="lead">Stay updated with the latest from our cooperative</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">News & Blog</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card featured-article border-0 shadow-lg mb-5">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                     class="img-fluid h-100 object-fit-cover" alt="Featured Article">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card-body p-5">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-success me-2">Featured</span>
+                                        <small class="text-muted">August 20, 2024</small>
+                                    </div>
+                                    <h2 class="card-title fw-bold mb-3">Ravine Dairies Achieves Carbon Neutral Status</h2>
+                                    <p class="card-text lead">
+                                        We're proud to announce that Ravine Dairies Cooperative has officially achieved 
+                                        carbon neutral status, making us the first dairy cooperative in the region to 
+                                        reach this milestone.
+                                    </p>
+                                    <p class="card-text">
+                                        Through our comprehensive sustainability program, including solar energy installation, 
+                                        methane capture systems, and regenerative farming practices, we've successfully 
+                                        offset our carbon footprint while maintaining the highest quality standards.
+                                    </p>
+                                    <a href="#" class="btn btn-success">Read Full Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="py-3 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-success active" data-category="all">All News</button>
+                    <button type="button" class="btn btn-outline-success" data-category="sustainability">Sustainability</button>
+                    <button type="button" class="btn btn-outline-success" data-category="products">Products</button>
+                    <button type="button" class="btn btn-outline-success" data-category="community">Community</button>
+                    <button type="button" class="btn btn-outline-success" data-category="awards">Awards</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Articles Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="news-grid">
+                <!-- Sustainability Articles -->
+                <div class="col-lg-4 col-md-6 news-item" data-category="sustainability">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Solar Installation">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Sustainability</span>
+                                <small class="text-muted">August 15, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Solar Panel Installation Complete</h5>
+                            <p class="card-text">Our processing facility is now 100% powered by renewable energy thanks to our new 500kW solar installation, reducing our carbon footprint by 80%.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: Peter Kimani</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="community">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Community Farm Day">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Community</span>
+                                <small class="text-muted">August 12, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Community Farm Day Success</h5>
+                            <p class="card-text">Over 500 families visited our farms during the annual Community Farm Day event, learning about sustainable farming and enjoying fresh dairy products.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: Lucy Njeri</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="products">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1631206853832-8c80bf2a2b8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="New Cheese Products">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Products</span>
+                                <small class="text-muted">August 10, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">New Artisan Cheese Line Launch</h5>
+                            <p class="card-text">Introducing our new line of artisan cheeses, including aged gouda, blue cheese, and herb-infused varieties, crafted by our master cheesemakers.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: James Mwangi</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="awards">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Award Ceremony">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Awards</span>
+                                <small class="text-muted">August 8, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Best Dairy Cooperative Award 2024</h5>
+                            <p class="card-text">Ravine Dairies has been honored with the "Best Dairy Cooperative 2024" award at the National Agricultural Excellence Awards ceremony.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: Grace Wanjiku</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="sustainability">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Organic Certification">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Sustainability</span>
+                                <small class="text-muted">August 5, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">15 More Farms Achieve Organic Certification</h5>
+                            <p class="card-text">We're proud to announce that 15 additional member farms have successfully completed their organic certification process, bringing our total to 150 certified organic farms.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: Peter Kimani</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="community">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Farmer Training">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Community</span>
+                                <small class="text-muted">August 3, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Farmer Training Program Expansion</h5>
+                            <p class="card-text">Our comprehensive farmer training program has expanded to include 50 new participants, focusing on sustainable farming techniques and animal welfare practices.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: Mary Wanjiku</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="products">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1571212515416-fca0ba1e9ba9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Greek Yogurt">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning">Products</span>
+                                <small class="text-muted">August 1, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Greek Yogurt Production Doubles</h5>
+                            <p class="card-text">Due to overwhelming demand, we've doubled our Greek yogurt production capacity, introducing new flavors and larger family-size containers.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: James Mwangi</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="community">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Youth Program">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary">Community</span>
+                                <small class="text-muted">July 28, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Youth Agriculture Program Launch</h5>
+                            <p class="card-text">Launching our new youth agriculture program to inspire the next generation of farmers with hands-on learning experiences and mentorship opportunities.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: David Mwangi</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 news-item" data-category="sustainability">
+                    <article class="card news-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             class="card-img-top" alt="Water Conservation">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Sustainability</span>
+                                <small class="text-muted">July 25, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold">Water Conservation Initiative Results</h5>
+                            <p class="card-text">Our water conservation program has achieved a 30% reduction in water usage across all member farms through innovative irrigation and recycling systems.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">By: Peter Kimani</small>
+                                <a href="#" class="btn btn-outline-success btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-success btn-lg" id="load-more">
+                    <i class="bi bi-arrow-down-circle me-2"></i>Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-5 bg-cream">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-success mb-3">Stay Updated</h2>
+                    <p class="lead">Subscribe to our newsletter and never miss important updates from Ravine Dairies Cooperative.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle text-success me-2"></i>Weekly news updates</li>
+                        <li><i class="bi bi-check-circle text-success me-2"></i>Product announcements</li>
+                        <li><i class="bi bi-check-circle text-success me-2"></i>Exclusive offers</li>
+                        <li><i class="bi bi-check-circle text-success me-2"></i>Farm event invitations</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3">Newsletter Subscription</h5>
+                            <form id="newsletter-form">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Enter your email address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="weekly-digest">
+                                        <label class="form-check-label" for="weekly-digest">
+                                            Weekly digest
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="product-updates">
+                                        <label class="form-check-label" for="product-updates">
+                                            Product updates
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100">
+                                    <i class="bi bi-envelope me-2"></i>Subscribe Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="bi bi-droplet-fill me-2"></i>Ravine Dairies
+                    </h5>
+                    <p>Farmer-owned cooperative dedicated to delivering the freshest, highest-quality dairy products while supporting sustainable agriculture and local communities.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="products.html" class="text-white-50">Products</a></li>
+                        <li><a href="farmers.html" class="text-white-50">Our Farmers</a></li>
+                        <li><a href="sustainability.html" class="text-white-50">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Products</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Fresh Milk</a></li>
+                        <li><a href="#" class="text-white-50">Artisan Cheese</a></li>
+                        <li><a href="#" class="text-white-50">Greek Yogurt</a></li>
+                        <li><a href="#" class="text-white-50">Farm Butter</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p>Stay updated with our latest news and offers</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email" required>
+                        <button class="btn btn-success" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Ravine Dairies Cooperative. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // News filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('[data-category]');
+            const newsItems = document.querySelectorAll('.news-item');
+            const loadMoreBtn = document.getElementById('load-more');
+            const newsletterForm = document.getElementById('newsletter-form');
+
+            // Category filtering
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter news items
+                    newsItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Load more functionality (simulation)
+            loadMoreBtn.addEventListener('click', function() {
+                this.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Loading...';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    alert('No more articles to load. This would typically load more content from a server.');
+                    this.innerHTML = '<i class="bi bi-arrow-down-circle me-2"></i>Load More Articles';
+                    this.disabled = false;
+                }, 1500);
+            });
+
+            // Newsletter form
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                const weeklyDigest = document.getElementById('weekly-digest').checked;
+                const productUpdates = document.getElementById('product-updates').checked;
+                
+                if (email) {
+                    alert(`Thank you for subscribing!\nEmail: ${email}\nWeekly Digest: ${weeklyDigest ? 'Yes' : 'No'}\nProduct Updates: ${productUpdates ? 'Yes' : 'No'}`);
+                    this.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
