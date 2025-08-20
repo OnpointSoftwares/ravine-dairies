@@ -607,6 +607,76 @@ section {
     background: linear-gradient(135deg, var(--cream-white) 0%, #fff 100%);
 }
 
+/* Sustainability Page Styles */
+.pillar-card {
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.initiative-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.initiative-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.initiative-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.initiative-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.metric-item {
+    padding: 2rem 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.metric-item:last-child {
+    border-bottom: none;
+}
+
+.certification-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.goal-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 8px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
 /* Responsive Text Sizes */
 @media (max-width: 576px) {
     .page-header {
